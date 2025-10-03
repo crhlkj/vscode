@@ -31,6 +31,7 @@
     "editor.renderLineHighlight": "all", // Подсвечивает всю строку, а не только текст
 
 
+
     // ==================== ПОДСКАЗКИ И ИНТЕЛЛЕКТУАЛЬНАЯ ПОМОЩЬ ====================
     "editor.parameterHints.enabled": true, // Подсказки параметров функций
     "editor.hover.above": false, // Показывать ховер под элементом
@@ -64,7 +65,7 @@
 
 
     // ==================== ИНТЕРФЕЙС ====================
-    "editor.minimap.enabled": false, // Отключить мини-карту
+    "editor.minimap.enabled": true, // Отключить мини-карту
     "workbench.editor.highlightModifiedTabs": true, // Подсвечивает измененные вкладки
     "workbench.startupEditor": "none", // Не открывает ничего при запуске
 
@@ -88,10 +89,29 @@
     "C_Cpp.autocomplete": "default",
     "C_Cpp.errorSquiggles": "enabled",
 
-    
+
+    // ==================== GO (Golang) НАСТРОЙКИ ====================
+    "go.useLanguageServer": true, // Включить языковой сервер для автодополнения
+    "go.formatTool": "gofmt", // Использовать gofmt для форматирования
+    "go.formatOnSave": true, // Форматировать код при сохранении
+    "go.lintOnSave": "package", // Проверять код на ошибки при сохранении
+    "go.autocompleteUnimportedPackages": true, // Автодополнение для неимпортированных пакетов
+
+    // Для отладки
+    "go.enableCodeLens": {
+        "runtest": true
+    },
+
+    // Алиасы для быстрого тестирования
+    "go.testFlags": [
+        "-v"
+    ],
+
+    "go.testTimeout": "30s",
+
+
     // ==================== ДЛЯ ERROR LENS ====================
     "errorLens.enabled": true,
     "errorLens.fontSize": "0.85em",
 }
-
 ```
