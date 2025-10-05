@@ -90,26 +90,6 @@
     "C_Cpp.errorSquiggles": "enabled",
 
 
-    // ==================== GO (Golang) НАСТРОЙКИ ====================
-    "go.useLanguageServer": true, // Включить языковой сервер для автодополнения
-    "go.formatTool": "gofmt", // Использовать gofmt для форматирования
-    "go.formatOnSave": true, // Форматировать код при сохранении
-    "go.lintOnSave": "package", // Проверять код на ошибки при сохранении
-    "go.autocompleteUnimportedPackages": true, // Автодополнение для неимпортированных пакетов
-
-    // Для отладки
-    "go.enableCodeLens": {
-        "runtest": true
-    },
-
-    // Алиасы для быстрого тестирования
-    "go.testFlags": [
-        "-v"
-    ],
-
-    "go.testTimeout": "30s",
-
-
     // ==================== ДЛЯ ERROR LENS ====================
     "errorLens.enabled": true,
     "errorLens.fontSize": "0.85em",
