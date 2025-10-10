@@ -1,133 +1,122 @@
 ```json
 {
   // ┌──────────────────────────────────────────────┐
-  // │                Ш Р И Ф Т Ы                   │
+  // │                  ШРИФТЫ                      │
   // └──────────────────────────────────────────────┘
-  "editor.fontSize": 16,                           // Размер шрифта в редакторе
-  "editor.lineHeight": 24,                         // Высота строки
-  "editor.letterSpacing": 0.5,                     // Расстояние между символами
-  "editor.fontFamily": "'Fira Code', monospace",   // Тип шрифта
-  "editor.fontLigatures": true,                    // Включение лигатур (соединений символов)
-
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.letterSpacing": 0.5,
+  "editor.fontFamily": "'Fira Code', 'JetBrains Mono', monospace",
+  "editor.fontLigatures": true,
   // ┌──────────────────────────────────────────────┐
-  // │        Т А Б У Л Я Ц И Я   И   Ф О Р М А Т   │
+  // │          ТАБУЛЯЦИЯ И ФОРМАТИРОВАНИЕ          │
   // └──────────────────────────────────────────────┘
-  "editor.tabSize": 4,                             // Количество пробелов в табуляции
-  "editor.insertSpaces": true,                     // Заменяет табуляцию на пробелы
-  "editor.renderWhitespace": "boundary",           // Отображает пробелы только на границах
-  "editor.guides.indentation": true,               // Показывает линии отступов
-  "editor.guides.bracketPairs": true,              // Подсвечивает пары скобок
-  "editor.guides.highlightActiveIndentation": true,// Подсветка активного уровня отступа
-  "editor.autoIndent": "advanced",                 // Автоматическая индентация
-  "editor.detectIndentation": true,                // Автоматическое определение отступов
-  "editor.autoClosingBrackets": "always",          // Автоматическое закрытие скобок
-  "editor.autoClosingQuotes": "always",            // Автоматическое закрытие кавычек
-  "editor.autoClosingDelete": "always",            // Удаление парных символов при удалении одного
-  "editor.autoSurround": "languageDefined",        // Автоматическое окружение выражений
-
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.autoIndent": "advanced",
+  "editor.detectIndentation": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.autoClosingDelete": "always",
+  "editor.autoSurround": "languageDefined",
+  "editor.trimAutoWhitespace": true,
+  "files.insertFinalNewline": true,
   // ┌──────────────────────────────────────────────┐
-  // │           В И Д   И   П О В Е Д Е Н И Е      │
+  // │               ПОВЕДЕНИЕ РЕДАКТОРА            │
   // └──────────────────────────────────────────────┘
-  "editor.lineNumbers": "relative",                // Относительная нумерация строк
-  "editor.renderLineHighlight": "all",             // Подсветка текущей строки
-  "editor.occurrencesHighlight": "singleFile",     // Подсветка совпадений в файле
-  "editor.matchBrackets": "always",                // Подсветка пар скобок
-  "editor.bracketPairColorization.enabled": true,  // Различение скобок цветом
-  "editor.folding": true,                          // Возможность сворачивания кода
-  "editor.glyphMargin": true,                      // Маржа для иконок (например, глюков)
-  "editor.tabCompletion": "on",                    // Автозавершение через Tab
-  "editor.acceptSuggestionOnEnter": "on",          // Принятие подсказки при Enter
-  "editor.hover.enabled": true,                    // Подсказки при наведении
-  "editor.suggestOnTriggerCharacters": true,       // Подсказки при вводе триггерных символов
-  "editor.parameterHints.enabled": true,           // Подсказки параметров функций
-  "editor.inlineSuggest.enabled": true,            // Инлайновые подсказки
+  "editor.lineNumbers": "relative",
+  "editor.renderLineHighlight": "all",
+  "editor.occurrencesHighlight": "singleFile",
+  "editor.matchBrackets": "always",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.folding": true,
+  "editor.foldingStrategy": "auto",
+  "editor.glyphMargin": true,
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.hover.enabled": true,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.parameterHints.enabled": true,
+  "editor.inlineSuggest.enabled": true,
   "editor.quickSuggestions": {
-    "other": true,                                 // Быстрые подсказки для кода
-    "comments": true,                              // Для комментариев
-    "strings": true                                // Для строк
+    "other": true,
+    "comments": true,
+    "strings": true
   },
-  "editor.suggest.localityBonus": true,            // Приоритет локальных подсказок
-
+  "editor.suggest.localityBonus": true,
   // ┌──────────────────────────────────────────────┐
-  // │                Н А В И Г А Ц И Я             │
+  // │                 НАВИГАЦИЯ                    │
   // └──────────────────────────────────────────────┘
-  "editor.minimap.enabled": true,                  // Миникарта кода
-  "editor.minimap.renderCharacters": true,         // Не отображать символы на миникарте
-  "editor.stickyScroll.enabled": true,             // Липкий скролл для сайдбара
-  "editor.overviewRulerBorder": true,              // Отключение границы у overview ruler
-  "editor.scrollBeyondLastLine": true,             // Не прокручивать за последнюю строку
-  "editor.cursorSurroundingLines": 5,              // Количество строк вокруг курсора
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.overviewRulerBorder": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.cursorSurroundingLines": 5,
   "editor.cursorSurroundingLinesStyle": "all",
-  "editor.wordWrap": "on",                         // Перенос строк
-
+  "editor.wordWrap": "on",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   // ┌──────────────────────────────────────────────┐
-  // │                И Н Т Е Р Ф Е Й С             │
+  // │                 ИНТЕРФЕЙС                    │
   // └──────────────────────────────────────────────┘
-  "workbench.startupEditor": "welcomePage",        // Стартовая страница
-  "workbench.colorTheme": "Monokai",               // Тема интерфейса
-  "workbench.iconTheme": "material-icon-theme",    // Тема иконок
-  "workbench.productIconTheme": "material-product-icons", // Тема продуктовых иконок
-  "editor.cursorStyle": "line-thin",               // Стиль курсора (тонкая линия)
-  "editor.cursorBlinking": "expand",               // Режим мигания курсора
-  "editor.smoothScrolling": true,                  // Плавная прокрутка
-  "editor.cursorSmoothCaretAnimation": "on",       // Плавная анимация курсора
-  "editor.foldingStrategy": "auto",                // Стратегия сворачивания кода
-  "window.zoomLevel": 0,                           // Уровень масштабирования
-  "workbench.editor.highlightModifiedTabs": false, // Подсветка изменённых вкладок
-
+  "workbench.startupEditor": "welcomePage",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorBlinking": "expand",
+  "window.zoomLevel": 0,
+  "workbench.editor.highlightModifiedTabs": false,
   // ┌──────────────────────────────────────────────┐
-  // │        С О Х Р А Н Е Н И Е   И   Ф О Р М А Т │
+  // │       СОХРАНЕНИЕ И АВТОФОРМАТ                │
   // └──────────────────────────────────────────────┘
-  "editor.formatOnSave": true,                     // Форматировать при сохранении
-  "editor.formatOnPaste": true,                    // При вставке
-  "editor.formatOnType": true,                     // Автосохранение после задержки
-  "editor.trimAutoWhitespace": true,               // Удалять лишние пробелы
-  "files.insertFinalNewline": true,                // Добавлять пустую строку в конце файла
-
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
   // ┌──────────────────────────────────────────────┐
-  // │                Т Е Р М И Н А Л               │
+  // │                  ТЕРМИНАЛ                    │
   // └──────────────────────────────────────────────┘
-  "terminal.integrated.fontSize": 15,                         // Размер шрифта терминала
-  "terminal.integrated.shellIntegration.enabled": true,       // Интеграция shell
-  "terminal.integrated.cursorBlinking": true,                 // Мигание курсора
-  "terminal.integrated.gpuAcceleration": "on",                // GPU-ускорение
-  "terminal.integrated.defaultProfile.windows": "PowerShell", // Профиль для Windows
-  "terminal.integrated.defaultProfile.linux": "bash",         // Для Linux
-  "terminal.integrated.defaultProfile.osx": "zsh",            // Для macOS
-
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   // ┌──────────────────────────────────────────────┐
-  // │                О Т Л А Д К А                 │
+  // │                   ОТЛАДКА                    │
   // └──────────────────────────────────────────────┘
-  "debug.console.fontSize": 15,                    // Размер шрифта в консоли отладки
-  "debug.onTaskErrors": "showErrors",              // Отображать ошибки задач
-
+  "debug.console.fontSize": 15,
+  "debug.onTaskErrors": "showErrors",
   // ┌──────────────────────────────────────────────┐
-  // │                И И - Ф У Н К Ц И И           │
+  // │               AI-ФУНКЦИИ                     │
   // └──────────────────────────────────────────────┘
-  "chat.disableAIFeatures": true,                  // Отключено для совместимости с gigacode
-  "gigacode.common.wholeLineReplacement": true,    // Замена целой строки
-  "gigacode.inlineHints": true,                    // Инлайновые подсказки
-  "gigacode.inlineCompletionColor": "blue",        // Цвет подсказок
-  "gigacode.lookupPriority": true,                 // Приоритет поиска
-  "gigacode.showCompletionsInline": true,          // Показывать подсказки inline
-
+  "chat.disableAIFeatures": true,
+  "gigacode.common.wholeLineReplacement": true,
+  "gigacode.inlineHints": true,
+  "gigacode.inlineCompletionColor": "blue",
+  "gigacode.lookupPriority": true,
+  "gigacode.showCompletionsInline": true,
   // ┌──────────────────────────────────────────────┐
-  // │                E R R O R   L E N S           │
+  // │                  ERROR LENS                  │
   // └──────────────────────────────────────────────┘
-  "errorLens.enabled": true,                       // Включить Error Lens
-  "errorLens.fontWeight": "bold",                  // Жирный шрифт ошибок
-  "errorLens.fontSize": "12px",                    // Размер шрифта
-  "errorLens.gutterIconsEnabled": true,            // Иконки в gutter
-  "errorLens.onSave": false,                       // Не показывать ошибки после сохранения
-
+  "errorLens.enabled": true,
+  "errorLens.fontWeight": "bold",
+  "errorLens.fontSize": "13px",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.onSave": false,
   // ┌──────────────────────────────────────────────┐
-  // │          Д О П О Л Н И Т Е Л Ь Н О           │
+  // │               ДОПОЛНИТЕЛЬНО                  │
   // └──────────────────────────────────────────────┘
-  "settingsSync.ignoredSettings": [],              // Игнорируемые настройки синхронизации
-  "explorer.confirmDragAndDrop": false,            // Не спрашивать подтверждение при перетаскивании
+  "settingsSync.ignoredSettings": [],
+  "explorer.confirmDragAndDrop": false,
   "workbench.colorCustomizations": {
-    "editorGhostText.foreground": "#2CD7F6"      // Цвет ghost-текста
+    "editorGhostText.foreground": "#3186f2"
   }
 }
-
 ```
